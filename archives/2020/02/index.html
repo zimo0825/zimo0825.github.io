@@ -634,6 +634,9 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
     siteTime();
 </script>
+< if (theme.baidustatistic.enable){ >
+<- partial('post/baidustatistic') >
+< } >
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
@@ -673,7 +676,7 @@ $(function () {
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152593210-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -681,7 +684,7 @@ $(function () {
     }
 
     gtag('js', new Date());
-    gtag('config', '');
+    gtag('config', 'UA-152593210-1');
 </script>
 
 
